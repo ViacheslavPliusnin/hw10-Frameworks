@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Helvetica Neue-Bold', sans-serif;
+    src: url(../assets/fonts/HelveticaNeue-Bold.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Neue-Medium', sans-serif;
+    src: url(../assets/fonts/HelveticaNeue-Medium.ttf);
+}
+*, *::before, *::after {
+    font-family: 'Helvetica Neue-Medium', sans-serif;
+    font-weight: 400;
+    color: #262626;
+}
+nav {
+    border-color: #DBDBDB;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
+nav a {
+    outline: none;
+}
+.searchbar {
+    padding-left: 27px;
+    width: 216px;
+    font-family: 'Helvetica Neue-Medium', sans-serif;
+    color: #8F8F8F;
+    text-align: center;
+    border-color: #DBDBDB;
+    background-image: url(../assets/img/Search.png);
+    background-repeat: no-repeat;
+    background-position: 29% center;
+}
+.searchbar:active, .searchbar:focus {
+    background-position: 5% center;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.navbar-nav a:hover {
+    transform: scale(0.9);
+    transition: linear 0.3s;
+}
+.direct {
+    position: relative;
+}
+.direct div {
+    position: absolute;
+    bottom: 11px;
+    left: 10px;
+    text-align: center;
+    border-radius: 9px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: white;
+    background-color: #DC565B;
+}
+.lorem {
+    font-size: 45px;
+}
+header {
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
+.profile-picture {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29px;
+    background-image: url(../assets/img/nba_logo.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 154px;
+    width: 154px;
+    border: 1px solid #DBDBDB;
+    border-radius: 77px;
+}
+.button_block {
+    margin-top: 36px;
+}
+.button_block h2 {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 26px;
+    margin-bottom: 0;
+    margin-right: 24px;
+}
+.button_block button {
+    font-size: 14px;
+    font-family: 'Helvetica Neue-Bold', sans-serif;
+    font-weight: bold;
+    background-color: #4094EF;
+    border-color: #4094EF;
+}
+.button_block button:first-of-type {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-right: 6px;
+}
+.button_block button:nth-of-type(2) {
+    padding: 5px 13px 5px 13px;
+    margin-right: 12px;
+}
+.button_block button:last-of-type {
+    padding: 5px 0px 5px 0px;
+    letter-spacing: 3px;
+    background-color: transparent;
+    border: none;
+}
+.button_block button:last-of-type:focus {
+    border: none;
+}
+.followers a {
+    text-decoration: none;
+    font-size: 17px;
+}
+.followers {
+    margin-top: 24px;
+    gap: 35px;
+    padding-left: 0;
+}
+.bio {
+    font-size: 17px;
+    margin-top: 21px;
+}
+.bio h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.bio p {
+    margin-bottom: 0;
+}
+.bio a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #133768;
+}
+.stories {
+    margin-top: 52px;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
+.stories-container {
+    text-align: center;
+    border-bottom: 1px solid #DBDBDB;
+    padding-bottom: 55px;
+}
+.stories-container a {
+    text-decoration: none;
+}
+.stories-container h4 {
+    width: 79px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 11px;
+}
+.stories-picture {
+    width: 79px;
+    height: 79px;
+    border: 1px solid #DBDBDB;
+    border-radius: 40px;
+    background-size: contain;
+}
+.stories-season {
+    background-image: url(../assets/img/season.jpg);
+}
+.stories-guide {
+    background-image: url(../assets/img/guides.jpg);
+}
+.stories-draft {
+    background-image: url(../assets/img/draft.jpg);
+}
+.stories-finals {
+    background-image: url(../assets/img/finals.jpg);
+}
+main {
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
+.posts-tagged {
+    gap: 65px;
+    display: flex;
+    justify-content: center;
+}
+.posts {
+    gap: 5px;
+    border-top: 1px solid #262626;
+    display: inline-flex;
+    align-items: center;
+}
+.tagged {
+    gap: 5px;
+    display: inline-flex;
+    align-items: center;
+    border-top: 1px solid transparent;
+}
+.tagged p {
+    color: #8F8F8F;
+}
+.posts-tagged p {
+    padding: 19px 0px 19px 0px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.tagged:hover, .posts:hover {
+    cursor: pointer;
+    border-top: 1px solid #262626;
+}
+.instagram-post img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+.instagram-post img:hover {
+    cursor: pointer;
+}
+.feed {
+    margin-bottom: 25px;
+}
+.feed div {
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .instagram-post {
+        margin-bottom: 25px;
+    }
+}
