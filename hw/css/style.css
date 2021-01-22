@@ -57,8 +57,8 @@ nav a {
     color: white;
     background-color: #DC565B;
 }
-.lorem {
-    font-size: 45px;
+.small_profile_picture {
+    height: 22px;
 }
 header {
     padding-left: 17.5%;
