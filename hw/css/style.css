@@ -234,6 +234,9 @@ main {
     .instagram-post {
         margin-bottom: 25px;
     }
+    .feed {
+        margin-bottom: 0px;
+    }
 }
 @media (max-width: 830px) {
     .navbar > .container-fluid {
