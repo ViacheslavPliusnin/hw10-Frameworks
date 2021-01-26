@@ -11,6 +11,9 @@
     font-weight: 400;
     color: #262626;
 }
+body {
+    overflow-x: hidden;
+}
 nav {
     border-color: #DBDBDB;
     padding-left: 17.5%;
@@ -18,6 +21,9 @@ nav {
 }
 nav a {
     outline: none;
+}
+.navbar-brand {
+    display: flex;
 }
 .searchbar {
     padding-left: 27px;
@@ -36,13 +42,25 @@ nav a {
 .navbar-nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 15px;
 }
+.nav-link {
+    display: flex;
+}
+object {
+    pointer-events: none;
+}
 .navbar-nav a:hover {
+    cursor: pointer;
     transform: scale(0.9);
     transition: linear 0.3s;
 }
+.icon:hover {
+    cursor: pointer;
+}
 .direct {
+    display: flex;
     position: relative;
 }
 .direct div {
@@ -50,7 +68,7 @@ nav a {
     bottom: 11px;
     left: 10px;
     text-align: center;
-    border-radius: 9px;
+    border-radius: 50%;
     width: 18px;
     height: 18px;
     font-size: 12px;
@@ -75,7 +93,7 @@ header {
     height: 154px;
     width: 154px;
     border: 1px solid #DBDBDB;
-    border-radius: 77px;
+    border-radius: 50%;
 }
 .button_block {
     margin-top: 36px;
@@ -103,6 +121,9 @@ header {
     padding: 6px 13px 6px 13px;
     margin-right: 12px;
 }
+.button_block button:nth-of-type(2) object {
+    margin-bottom: 2px;
+}
 .button_block button:last-of-type {
     padding: 5px 0px 5px 0px;
     letter-spacing: 3px;
@@ -121,6 +142,9 @@ header {
     margin-top: 24px;
     gap: 35px;
     padding-left: 0;
+}
+.counter {
+    font-weight: bold;
 }
 .bio {
     font-size: 17px;
@@ -148,6 +172,9 @@ header {
     border-bottom: 1px solid #DBDBDB;
 }
 .stories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     border-bottom: 1px solid #DBDBDB;
     padding-bottom: 55px;
@@ -156,29 +183,22 @@ header {
     text-decoration: none;
 }
 .stories-container h4 {
-    width: 79px;
-    font-size: 14px;
+    width: 100%;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 11px;
 }
 .stories-picture {
-    height: 79px;
-    width: 79px;
+    max-width: 79px;
+    width: 100%;
     border: 1px solid #DBDBDB;
-    border-radius: 40px;
+    border-radius: 50%;
     background-size: contain;
 }
-.stories-season {
-    background-image: url(../assets/img/season.jpg);
-}
-.stories-guide {
-    background-image: url(../assets/img/guides.jpg);
-}
-.stories-draft {
-    background-image: url(../assets/img/draft.jpg);
-}
-.stories-finals {
-    background-image: url(../assets/img/finals.jpg);
+.stories-picture img {
+    max-width: 79px;
+    width: 100%;
+    border-radius: 50%;
 }
 main {
     padding-left: 17.5%;
@@ -215,8 +235,11 @@ main {
     cursor: pointer;
     border-top: 1px solid #262626;
 }
-.tagged:hover .tagged-icon, .tagged:hover p {
+.tagged:hover, .tagged:hover p {
     color: #262626;
+    fill: #262626;
+}
+.tagged-icon {
     fill: #262626;
 }
 .instagram-post img {
@@ -252,5 +275,13 @@ main {
     .stories {
         padding-left: 0;
         padding-right: 0;
+    }
+    .stories-container h4 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .counter {
+        font-size: 13px;
     }
 }
